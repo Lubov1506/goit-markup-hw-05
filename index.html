@@ -490,7 +490,7 @@
     <!-- #endregion Footer-->
 
     <!-- #region Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -503,13 +503,13 @@
 
         <form class="modal-form" autocomplete="off">
           <div class="modal-field">
-            <label for="user_name" class="modal-label">Name</label>
+            <label for="user-name" class="modal-label">Name</label>
             <div class="input-box">
               <input
                 type="text"
                 class="modal-input-info"
-                id="user_name"
-                name="user_name"
+                id="user-name"
+                name="user-name"
               />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
@@ -518,13 +518,13 @@
           </div>
 
           <div class="modal-field">
-            <label for="user_phone" class="modal-label">Phone</label>
+            <label for="user-phone" class="modal-label">Phone</label>
             <div class="input-box">
               <input
                 type="text"
                 class="modal-input-info"
-                id="user_phone"
-                name="user_phone"
+                id="user-phone"
+                name="user-phone"
               />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -533,13 +533,13 @@
           </div>
 
           <div class="modal-field">
-            <label for="user_email" class="modal-label">Email</label>
+            <label for="user-email" class="modal-label">Email</label>
             <div class="input-box">
               <input
                 type="text"
                 class="modal-input-info"
-                id="user_email"
-                name="user_email"
+                id="user-email"
+                name="user-email"
               />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
@@ -548,22 +548,25 @@
           </div>
 
           <div class="modal-field">
-            <label for="modal_textarea" class="modal-label">Comment</label>
-            <div class="input-box">
-              <textarea
-                class="modal-textarea"
-                name="modal_textarea"
-                placeholder="Text input"
-                id="modal_textarea"
-                rows="7"
-              ></textarea>
-            </div>
+            <label for="user-comment" class="modal-label">Comment</label>
+
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              placeholder="Text input"
+              id="user-comment"
+   
+            ></textarea>
           </div>
 
-          <p class="modal-text">
-            I accept the terms and conditions of the
-            <a class="modal-blue-link">Privacy Policy</a>
-          </p>
+          
+          <div class="modal-field-checkbox">
+            <input type="checkbox" value="true" id="user-privacy" name="user-privacy" class="modal-input-privacy visually-hidden">
+            <label class="modal-privacy-label"  for="user-privacy" >
+              I accept the terms and conditions of the
+              <a class="modal-blue-link">Privacy Policy</a>
+            </label>
+          </div>
 
           <button type="submit" class="btn modal-submit-btn">Send</button>
         </form>
