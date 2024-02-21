@@ -471,15 +471,16 @@
         <div class="footer-subscribe col">
           <p class="footer-caption">Subscribe</p>
           <form class="footer-subscribe-form row">
-            <label for="" class="footer-form-label">
+            <label for="user-email" class="footer-form-label">
               <input
                 class="footer-input-info"
                 type="email"
-                name="user_email"
+                name="user-email"
                 placeholder="E-mail"
+                id="user-email"
               />
             </label>
-            <button class="btn footer-btn-subscribe">
+            <button class="btn footer-btn-subscribe" type="submit">
               Subscribe
               <svg class="footer-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-frame"></use>
@@ -492,9 +493,9 @@
     <!-- #endregion Footer-->
 
     <!-- #region Modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
-        <button class="modal-close-btn">
+        <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-x-close"></use>
           </svg>
@@ -557,15 +558,24 @@
               name="user-comment"
               placeholder="Text input"
               id="user-comment"
-   
             ></textarea>
           </div>
 
-          
           <div class="modal-field-checkbox">
-            <input type="checkbox" value="true" id="user-privacy" name="user-privacy" class="modal-input-privacy visually-hidden">
-
-            <label class="modal-privacy-label"  for="user-privacy" >
+            
+            <label class="modal-privacy-label" for="user-privacy">
+              <input
+                type="checkbox"
+                value="true"
+                id="user-privacy"
+                name="user-privacy"
+                class="input-checkbox visually-hidden"
+              />
+              <span class="modal-checkbox">
+                <svg class="icon-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a class="modal-blue-link">Privacy Policy</a>
             </label>
